@@ -1,0 +1,80 @@
+{
+  "name": "sandra-pastor-website",
+  "version": "1.0.0",
+  "description": "Sitio web profesional de Sandra Pastor - Cantante para bodas y eventos en Málaga y Andalucía",
+  "main": "index.html",
+  "scripts": {
+    "start": "live-server --port=3000 --open=/index.html",
+    "dev": "live-server --port=3000 --open=/index.html --watch=.",
+    "build": "echo 'No build process required for static site'",
+    "deploy": "gh-pages -d .",
+    "validate": "html-validate index.html",
+    "optimize": "imagemin images/* --out-dir=images/optimized",
+    "lighthouse": "lighthouse http://localhost:3000 --output=html --output-path=./lighthouse-report.html"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/usuario/sandra-pastor-website.git"
+  },
+  "keywords": [
+    "sandra-pastor",
+    "cantante",
+    "bodas",
+    "eventos",
+    "málaga",
+    "andalucía",
+    "música",
+    "karaoke",
+    "guitar",
+    "profesional",
+    "costa-del-sol"
+  ],
+  "author": {
+    "name": "Sandra Pastor",
+    "email": "info@sandrapastormusica.es",
+    "url": "http://sandrapastor.myartsonline.com/"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/usuario/sandra-pastor-website/issues"
+  },
+  "homepage": "https://usuario.github.io/sandra-pastor-website",
+  "devDependencies": {
+    "live-server": "^1.2.2",
+    "gh-pages": "^6.0.0",
+    "html-validate": "^8.7.4",
+    "imagemin-cli": "^7.0.0",
+    "lighthouse": "^11.4.0"
+  },
+  "browserslist": [
+    "> 1%",
+    "last 2 versions",
+    "not dead",
+    "not ie 11"
+  ],
+  "engines": {
+    "node": ">=14.0.0",
+    "npm": ">=6.0.0"
+  },
+  "config": {
+    "domain": "sandrapastor.myartsonline.com",
+    "contact": {
+      "email": "info@sandrapastormusica.es",
+      "phone": "+34639605130",
+      "whatsapp": "https://wa.me/34639605130"
+    }
+  },
+  "metadata": {
+    "title": "Sandra Pastor - Cantante Profesional",
+    "description": "Cantante profesional para bodas y eventos en Málaga y Andalucía. 25+ años de experiencia, 400+ temas en repertorio.",
+    "services": [
+      "Cantante en Bodas - 80€/hora",
+      "Eventos Corporativos - 60€/hora", 
+      "Karaoke Profesional - 60€/hora"
+    ],
+    "coverage": "Málaga, Costa del Sol, Granada, Córdoba, Sevilla, Andalucía",
+    "experience": "25+ años",
+    "repertoire": "400+ temas",
+    "events_completed": "1000+"
+  }
+}
